@@ -1,0 +1,58 @@
+﻿<Window x:Class="bitirme_new.MainDessert"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:bitirme_new"
+        mc:Ignorable="d"
+       Title="MAIN DESSERTS" Height="600" Width="550" Background="White">
+    <Grid Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="46*"/>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="287*"/>
+            <ColumnDefinition Width="119*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="14*"/>
+        </Grid.ColumnDefinitions>
+        <Button  x:Name="btnCakes"  Click="BtnCakes_Click"     HorizontalAlignment="Left" Height="176" VerticalAlignment="Top" Width="272" Margin="0,40,0,0" Grid.ColumnSpan="3" >
+            <Button.Background>
+                <ImageBrush ImageSource="Image/cheesecake.jpg"/>
+            </Button.Background>
+            <Label Content="CAKES" Height="25" Width="100" FontFamily="Segoe UI Black" FontWeight="Bold" HorizontalContentAlignment="Center" Background="#FFC28282" Margin="150,120,0,0" RenderTransformOrigin="-0.94,1.013" FontSize="14"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="195.638,40,0,0" VerticalAlignment="Top" Width="272" Height="176" Grid.ColumnSpan="4" Grid.Column="2" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Image/cooky.jpg"/>
+            </Button.Background>
+            <Label Content="COOKIES" Height="25" Width="100" FontFamily="Segoe UI Black" FontWeight="Bold" Background="#FFB97575" HorizontalContentAlignment="Center" FontSize="14" Margin="130,125,0,0"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Height="176" VerticalAlignment="Top" Width="272" Margin="0,216,0,0" Grid.ColumnSpan="3" Click="Button_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="Image/icecream.jpg" Stretch="UniformToFill"/>
+            </Button.Background>
+            <Label Content="ICE CREAM" Height="25" Width="83" FontFamily="Segoe UI Black" FontWeight="Bold" Background="#FFB97575" HorizontalContentAlignment="Center" Margin="150,125,0,0"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Height="176" VerticalAlignment="Top" Width="272" Margin="195.638,216,0,0" RenderTransformOrigin="1.549,0.437" Grid.ColumnSpan="4" Grid.Column="2" Click="Button_Click_2">
+            <Button.Background>
+                <ImageBrush ImageSource="Image/chocolate.jpg"/>
+            </Button.Background>
+            <Label Content="CHOCOLATE DESSERTS" Height="25" Width="168" FontFamily="Segoe UI Black" FontWeight="Bold" Background="#FFB97575" HorizontalContentAlignment="Center" Margin="75,125,0,0"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Height="176" VerticalAlignment="Top" Width="272" Margin="0,392,0,0" Grid.ColumnSpan="3" Click="Button_Click_3">
+            <Button.Background>
+                <ImageBrush ImageSource="Image/baklava.jpg" Stretch="UniformToFill"/>
+            </Button.Background>
+            <Label Content="BAKLAVAS" Height="25" Width="85" FontFamily="Segoe UI Black" FontWeight="Bold" Background="#FFB97575" FontSize="14" Margin="150,125,0,0"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Height="176" VerticalAlignment="Top" Width="272" Margin="198.638,392,-0.638,0" Grid.ColumnSpan="4" Grid.Column="2" Click="Button_Click_4">
+            <Button.Background>
+                <ImageBrush ImageSource="Image/fruity.jpg" Stretch="UniformToFill"/>
+            </Button.Background>
+            <Label Content="FRUITY DESSERTS" Height="25" Width="129" FontFamily="Segoe UI Black" FontWeight="Bold" Background="#FFB97575" HorizontalContentAlignment="Center" Margin="75,125,0,0"/>
+        </Button>
+        <Button x:Name="btnMain" Click="BtnMain_Click" Content="Main Menu" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="120" Background="#FFB97575" Margin="10,5,0,0" Foreground="Black" FontWeight="Bold" HorizontalContentAlignment="Center" Grid.ColumnSpan="3"/>
+
+
+    </Grid>
+</Window>

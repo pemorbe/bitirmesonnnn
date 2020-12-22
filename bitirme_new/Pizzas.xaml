@@ -1,0 +1,95 @@
+﻿<Window x:Class="bitirme_new.Pizzas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:bitirme_new"
+        mc:Ignorable="d"
+       Title="PIZZAS" Height="600" Width="550">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="463*"/>
+            <ColumnDefinition Width="81*"/>
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="129" Margin="13,16,0,0" VerticalAlignment="Top" Width="161">
+            <Border.Background>
+                <ImageBrush ImageSource="Image/tavuklupizza.jpg"/>
+            </Border.Background>
+        </Border>
+        <Label x:Name="pizza1"         Content="Pizza with Chicken" HorizontalAlignment="Left" Height="33" Margin="201,21,0,0" VerticalAlignment="Top" Width="158" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Price : " HorizontalAlignment="Left" Height="32" Margin="201,106,0,0" VerticalAlignment="Top" Width="58" FontSize="14" FontWeight="Bold"/>
+        <Label x:Name="price1" Content="40.00 TL" HorizontalAlignment="Left" Height="32" Margin="248,108,0,0" VerticalAlignment="Top" Width="58" FontStyle="Italic"/>
+        <Label Content="Ingredients: Chicken,barbeque,mushroom,mozerela &#xA;with special souce" HorizontalAlignment="Left" Margin="201,59,0,0" VerticalAlignment="Top" Height="49" Width="333" FontStyle="Italic" FontSize="14" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="count1" HorizontalAlignment="Left" Height="25" Margin="408,109,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.935,0.436"/>
+        <Button x:Name="Addition" HorizontalAlignment="Left" Margin="447,108,0,0" VerticalAlignment="Top" Width="25" Height="26" Grid.ColumnSpan="2" Click="Addition_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Image/add_basket.png"/>
+            </Button.Background>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="373,108,0,0" VerticalAlignment="Top" Width="25" Height="26" RenderTransformOrigin="0.432,1.423" Click="Button_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="Image/remove_basket.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="pizza2"      Content="Mixed Pizza" HorizontalAlignment="Left" Height="33" Margin="13,173,0,0" VerticalAlignment="Top" Width="158" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Price : " HorizontalAlignment="Left" Height="32" Margin="13,279,0,0" VerticalAlignment="Top" Width="58" FontSize="14" FontWeight="Bold"/>
+        <Label x:Name="price2" Content="52.00 TL" HorizontalAlignment="Left" Height="32" Margin="60,281,0,0" VerticalAlignment="Top" Width="58" FontStyle="Italic"/>
+        <Label Content="Ingredients: Mozzarella , basil and tomato sauce, &#xD;&#xA;pepperoni, salami, sausage, ham, mushrooms, &#xD;&#xA;sweet corn, green peppers, black olives.&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,206,0,0" VerticalAlignment="Top" Height="74" Width="346" FontStyle="Italic" FontSize="14"/>
+        <TextBox x:Name="count2" HorizontalAlignment="Left" Height="25" Margin="220,282,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.935,0.436"/>
+        <Button x:Name="Addition_Copy" HorizontalAlignment="Left" Margin="259,283,0,0" VerticalAlignment="Top" Width="25" Height="26" Click="Addition_Copy_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Image/add_basket.png"/>
+            </Button.Background>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="185,283,0,0" VerticalAlignment="Top" Width="25" Height="26" RenderTransformOrigin="0.432,1.423" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Image/remove_basket.png"/>
+            </Button.Background>
+        </Button>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="129" Margin="366,185,0,0" VerticalAlignment="Top" Width="161
+                " Grid.ColumnSpan="2">
+            <Border.Background>
+                <ImageBrush ImageSource="Image/mixedpizza.jpg"/>
+            </Border.Background>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="129" Margin="13,352,0,0" VerticalAlignment="Top" Width="161                 ">
+            <Border.Background>
+                <ImageBrush ImageSource="Image/vejeteryan-pizza.jpg"/>
+            </Border.Background>
+        </Border>
+        <Label x:Name="pizza3"     Content="Vegeterian Pizza" HorizontalAlignment="Left" Height="33" Margin="201,357,0,0" VerticalAlignment="Top" Width="158" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Price : " HorizontalAlignment="Left" Height="32" Margin="201,442,0,0" VerticalAlignment="Top" Width="58" FontSize="14" FontWeight="Bold"/>
+        <Label x:Name="price3" Content="45.00 TL" HorizontalAlignment="Left" Height="32" Margin="248,444,0,0" VerticalAlignment="Top" Width="58" FontStyle="Italic"/>
+        <Label Content="Ingredients: Zucchini, eggplant, onion, pepper, &#xD;&#xA;mushroom, olive, corn" HorizontalAlignment="Left" Margin="201,390,0,0" VerticalAlignment="Top" Height="54" Width="326" FontStyle="Italic" FontSize="14" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="count3" HorizontalAlignment="Left" Height="25" Margin="408,445,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.935,0.436"/>
+        <Button x:Name="Addition_Copy1" HorizontalAlignment="Left" Margin="447,444,0,0" VerticalAlignment="Top" Width="25" Height="26" Grid.ColumnSpan="2" Click="Addition_Copy1_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Image/add_basket.png"/>
+            </Button.Background>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="373,444,0,0" VerticalAlignment="Top" Width="25" Height="26" RenderTransformOrigin="0.432,1.423" Click="Button_Click_2">
+            <Button.Background>
+                <ImageBrush ImageSource="Image/remove_basket.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnMainCourses" Click="BtnMainCourses_Click"   HorizontalAlignment="Left" Height="40" Margin="13,520,0,0" VerticalAlignment="Top" Width="40">
+            <Button.Background>
+                <ImageBrush ImageSource="Image/back button.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="GoBasket" Height="39" Margin="8.333,521,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.143,0.882" Grid.Column="1" HorizontalAlignment="Left" Width="38" Click="GoBasket_Click" >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="28.56"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="C:\Users\inanc\source\repos\bitirme_new\bitirme_new\Image\tamamla.jfif"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

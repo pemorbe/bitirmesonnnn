@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A65D430-747C-4D93-A7A8-9B89474D19E5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>bitirme_new</RootNamespace>
+    <AssemblyName>bitirme_new</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialDesignColors, Version=1.2.7.1979, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.2.7\lib\net45\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=3.2.0.1979, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.3.2.0\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Baklavas.xaml.cs">
+      <DependentUpon>Baklavas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Basket.xaml.cs">
+      <DependentUpon>Basket.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Burgers.xaml.cs">
+      <DependentUpon>Burgers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cakes.xaml.cs">
+      <DependentUpon>Cakes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Carbonated.xaml.cs">
+      <DependentUpon>Carbonated.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChocolateDesserts.xaml.cs">
+      <DependentUpon>ChocolateDesserts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Coctails.xaml.cs">
+      <DependentUpon>Coctails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cookies.xaml.cs">
+      <DependentUpon>Cookies.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="deneme.xaml.cs">
+      <DependentUpon>deneme.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="feedback.xaml.cs">
+      <DependentUpon>feedback.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="feedbackscreen2.xaml.cs">
+      <DependentUpon>feedbackscreen2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FruitDesserts.xaml.cs">
+      <DependentUpon>FruitDesserts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FruitJuice.xaml.cs">
+      <DependentUpon>FruitJuice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GrilledMeats.xaml.cs">
+      <DependentUpon>GrilledMeats.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IceCream.xaml.cs">
+      <DependentUpon>IceCream.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IceTeas.xaml.cs">
+      <DependentUpon>IceTeas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice.xaml.cs">
+      <DependentUpon>Invoice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="i_Meal.xaml.cs">
+      <DependentUpon>i_Meal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KitchenStaff.xaml.cs">
+      <DependentUpon>KitchenStaff.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainCourses.xaml.cs">
+      <DependentUpon>MainCourses.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainDessert.xaml.cs">
+      <DependentUpon>MainDessert.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainDrinks.xaml.cs">
+      <DependentUpon>MainDrinks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Note.xaml.cs">
+      <DependentUpon>Note.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pastas.xaml.cs">
+      <DependentUpon>Pastas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pay.xaml.cs">
+      <DependentUpon>Pay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pizzas.xaml.cs">
+      <DependentUpon>Pizzas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Role.xaml.cs">
+      <DependentUpon>Role.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SeaFood.xaml.cs">
+      <DependentUpon>SeaFood.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StaffSelection.xaml.cs">
+      <DependentUpon>StaffSelection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Table.xaml.cs">
+      <DependentUpon>Table.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TableNum.xaml.cs">
+      <DependentUpon>TableNum.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Toast.xaml.cs">
+      <DependentUpon>Toast.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Menu.xaml.cs">
+      <DependentUpon>Update_Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WarmDrinks.xaml.cs">
+      <DependentUpon>WarmDrinks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WaterSoda.xaml.cs">
+      <DependentUpon>WaterSoda.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Baklavas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Basket.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Burgers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cakes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Carbonated.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChocolateDesserts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Coctails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cookies.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="deneme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="feedback.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="feedbackscreen2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FruitDesserts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FruitJuice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GrilledMeats.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IceCream.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IceTeas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Invoice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="i_Meal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KitchenStaff.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainCourses.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainDessert.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainDrinks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Main_Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Note.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pastas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pizzas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Role.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SeaFood.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StaffSelection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Table.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TableNum.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Toast.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Update_Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WarmDrinks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WaterSoda.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main_Menu.xaml.cs">
+      <DependentUpon>Main_Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Image\Ekran Görüntüsü %28189%29.png - Kısayol.lnk" />
+    <None Include="Image\meyve back" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\1.jpg" />
+    <Resource Include="Image\add_basket.png" />
+    <Resource Include="Image\anayemekler.jpg" />
+    <Resource Include="Image\AppleTarteTatin.jpg" />
+    <Resource Include="Image\arasıcak.jpg" />
+    <Resource Include="Image\back button.png" />
+    <Resource Include="Image\back.png" />
+    <Resource Include="Image\baklava %282%29.jpg" />
+    <Resource Include="Image\baklava.jpg" />
+    <Resource Include="Image\baklavaback.jpg" />
+    <Resource Include="Image\beyaz-peynirli-tost.jpg" />
+    <Resource Include="Image\bolonez.jpg" />
+    <Resource Include="Image\burger.jpg" />
+    <Resource Include="Image\butteredpecan.jpg" />
+    <Resource Include="Image\cake.jpg" />
+    <Resource Include="Image\cheeseburger.jpg" />
+    <Resource Include="Image\cheesecake.jpg" />
+    <Resource Include="Image\CherryClafoutis.jpg" />
+    <Resource Include="Image\chickenburger.jpg" />
+    <Resource Include="Image\Chocolate Silk Pie.jpg" />
+    <Resource Include="Image\Chocolate Trifle.jpg" />
+    <Resource Include="Image\chocolate-cake.jpg" />
+    <Resource Include="Image\chocolate.jpg" />
+    <Resource Include="Image\clubsandwich.jpg" />
+    <Resource Include="Image\compresizeTrifle1.jpg" />
+    <Resource Include="Image\cooky.jpg" />
+    <Resource Include="Image\elmali-naneli-greyfurt-kokteyl-1080x770 - Copy.jpg" />
+    <Resource Include="Image\elmali-naneli-greyfurt-kokteyl-1080x770.jpg" />
+    <Resource Include="Image\foodicon.png" />
+    <Resource Include="Image\forward.png" />
+    <Resource Include="Image\fruitcake.jpg" />
+    <Resource Include="Image\FruitTart.jpg" />
+    <Resource Include="Image\fruity.jpg" />
+    <Resource Include="Image\gars.jpg" />
+    <Resource Include="Image\gazlı.jpg" />
+    <Resource Include="Image\gazlıiçecek Back.jpg" />
+    <Resource Include="Image\gingersnaps.jpg" />
+    <Resource Include="Image\grilledMeat.jpg" />
+    <Resource Include="Image\halka.jpg" />
+    <Resource Include="Image\hamburger.jpg" />
+    <Resource Include="Image\hamstava.jpg" />
+    <Resource Include="Image\icecream.jpg" />
+    <Resource Include="Image\icetea back.jpg" />
+    <Resource Include="Image\iceteas.jpg" />
+    <Resource Include="Image\icon.png" />
+    <Resource Include="Image\iconNew.jpg" />
+    <Resource Include="Image\icons8-full-shopping-basket-96.png" />
+    <Resource Include="Image\içecekler.jpg" />
+    <Resource Include="Image\karides.jpg" />
+    <Resource Include="Image\karışık tost.jpg" />
+    <Resource Include="Image\kokteyl.jpg" />
+    <Resource Include="Image\kori.jpg" />
+    <Resource Include="Image\levrek-bugulama.jpg" />
+    <Resource Include="Image\main menu icon1.png" />
+    <Resource Include="Image\meyve.jpg" />
+    <Resource Include="Image\meyvesuyu.jpg" />
+    <Resource Include="Image\meyvesuyubackground.png" />
+    <Resource Include="Image\minticecream.jpg" />
+    <Resource Include="Image\mixedpizza.jpg" />
+    <Resource Include="Image\moosetracks.jpg" />
+    <Resource Include="Image\next button.png" />
+    <Resource Include="Image\Nutella_trifle.jpg" />
+    <Resource Include="Image\parfe.jpg" />
+    <Resource Include="Image\pasta.jpg" />
+    <Resource Include="Image\patates.jpg" />
+    <Resource Include="Image\Peanut_Butter_Cookies.jpg" />
+    <Resource Include="Image\pesto.jpg" />
+    <Resource Include="Image\peynirli sandwich.jpg" />
+    <Resource Include="Image\pizza.jpg" />
+    <Resource Include="Image\remove_basket.png" />
+    <Resource Include="Image\restoranturizm1.jpg" />
+    <Resource Include="Image\salad.jpg" />
+    <Resource Include="Image\seafood.jpg" />
+    <Resource Include="Image\shortbreadcookie.jpg" />
+    <Resource Include="Image\soda.jpg" />
+    <Resource Include="Image\specialcake.jpg" />
+    <Resource Include="Image\staff.jpg" />
+    <Resource Include="Image\sıcakiçecek.jpg" />
+    <Resource Include="Image\sıcaksepet.jpg" />
+    <Resource Include="Image\tatlılar.jpg" />
+    <Resource Include="Image\Tavuk-Izgara.jpg" />
+    <Resource Include="Image\tavuklupizza.jpg" />
+    <Resource Include="Image\tea_coffee.jpg" />
+    <Resource Include="Image\tiramisu.jpg" />
+    <Resource Include="Image\toast.jpg" />
+    <Resource Include="Image\vejeteryan-pizza.jpg" />
+    <Resource Include="Image\waiter.jpg" />
+    <Resource Include="Image\çipura.jpg" />
+    <Resource Include="Image\ızgarabonfile.jpg" />
+    <Resource Include="Image\ızgaraköfte.jpg" />
+    <Resource Include="Image\ızgarapirzola.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\icons8-person-24.png" />
+    <Resource Include="Image\icons8-person-96.png" />
+    <Resource Include="Image\icons8-restaurant-table-64.png" />
+    <Resource Include="Image\bill.png" />
+    <Resource Include="Image\cash.png" />
+    <Resource Include="Image\icons8-money-96.png" />
+    <Resource Include="Image\icons8-mastercard-credit-card-96.png" />
+    <Resource Include="Image\icons8-invoice-96.png" />
+    <Resource Include="Image\blue-hourglass.gif" />
+    <Resource Include="Image\31073-simple-blue-tick-images.png" />
+    <Resource Include="Image\icons8-marker-pen-64.png" />
+    <Resource Include="Image\catalkasik.gif" />
+    <Resource Include="Image\catalkasik-ortada.gif" />
+    <Resource Include="Image\arakasiz-catal.gif" />
+    <Resource Include="Image\artikyeter.gif" />
+    <Resource Include="Image\girin_iste_amk.gif" />
+    <Resource Include="Image\icons8-person-96 %281%29.png" />
+    <Resource Include="Image\icons8-person-96 %282%29.png" />
+    <Content Include="Image\image.jfif" />
+    <Resource Include="Image\updatemenuicon.png" />
+    <Resource Include="Image\sussex12insmall.png" />
+    <Resource Include="Image\kasıgın_yanındaki_cıkıntı_yok.png" />
+    <Content Include="person-24px.svg" />
+    <Resource Include="Image\güleryüz.png" />
+    <Resource Include="Image\logo.png" />
+    <Resource Include="Image\sonhome.png" />
+    <Content Include="Image\tamamla.jfif" />
+    <Resource Include="Image\ödeme.png" />
+    <Resource Include="Ekran Görüntüsü %28189%29.png" />
+    <Resource Include="Image2.png" />
+    <Resource Include="Image1.png" />
+    <Content Include="Image\home.jfif" />
+    <Content Include="Image\logo.jfif" />
+    <Content Include="Image\sodaandwater.jfif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MaterialDesignThemes.3.2.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.3.2.0\build\MaterialDesignThemes.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MaterialDesignThemes.3.2.0\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MaterialDesignThemes.3.2.0\build\MaterialDesignThemes.targets'))" />
+  </Target>
+</Project>

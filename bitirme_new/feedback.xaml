@@ -1,0 +1,63 @@
+﻿<Window x:Class="bitirme_new.feedback"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:bitirme_new"
+        mc:Ignorable="d"
+       Title="pay" Height="600" Width="550" ResizeMode="NoResize" Background="{x:Null}" AllowsTransparency="True" WindowStyle="None" FontFamily="Champagne &amp; Limousines" WindowStartupLocation="CenterScreen">
+    <Border Background="White" CornerRadius="10">
+        <Grid Margin="-10,0,10,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border CornerRadius="10 0 0 10" Grid.ColumnSpan="2" Margin="0,0,267,0">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF15206A" Offset="1"/>
+                        <GradientStop Color="#FF196176" Offset="1"/>
+                        <GradientStop Color="#FF8D2020" Offset="0.245"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid>
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="535" Margin="0,33,10,32" Width="240">
+
+                        <TextBlock FontSize="15" Text="" Foreground="{StaticResource PrimaryHueDarkForegroundBrush}" HorizontalAlignment="Center"/>
+                        <TextBox Text="Your order has been taken!" Height="66" TextWrapping="Wrap" Margin="10,100,-38,0" FontFamily="Great Vibes" FontSize="20" Foreground="White" TextChanged="TextBox_TextChanged"  CaretBrush="{x:Null}" SelectionBrush="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Center" Width="268" />
+                    </StackPanel>
+                    <Button x:Name="backBasket"  VerticalAlignment="Bottom" Background="{x:Null}" BorderBrush="{x:Null}" Click="BackBasket_Click" >
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="ArrowLeft" Width="20" Height="20" VerticalAlignment="Center"/>
+                            <TextBlock Text="Back to basket" FontSize="13" Margin="5"/>
+                        </StackPanel>
+                    </Button>
+                </Grid>
+            </Border>
+            <Button VerticalAlignment="Top" Margin="10" HorizontalAlignment="Right" Grid.Column="1" Style="{StaticResource MaterialDesignFlatButton}">
+                <materialDesign:PackIcon Kind="Close"/>
+            </Button>
+            <Button x:Name="goPay"   HorizontalAlignment="Left" VerticalAlignment="Top" Width="107" Grid.Column="1" Margin="183,200,0,0" BorderBrush="{x:Null}" Height="119" Click="GoPay_Click" >
+                <Button.Background>
+                    <ImageBrush ImageSource="Image/icons8-mastercard-credit-card-96.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Cash"   HorizontalAlignment="Left" VerticalAlignment="Top" Width="129" Grid.Column="1" Margin="54,201,0,0" BorderBrush="{x:Null}" Height="118"  >
+                <Button.Background>
+                    <ImageBrush ImageSource="Image/icons8-money-96.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="143" Margin="73,221,0,0" Height="158" BorderBrush="{x:Null}" Foreground="{x:Null}" RenderTransformOrigin="0.647,0.461">
+                <Button.Background>
+                    <ImageBrush ImageSource="Image/31073-simple-blue-tick-images.png"/>
+                </Button.Background>
+            </Button>
+            <TextBlock Grid.Column="1" Foreground="Black" HorizontalAlignment="Left" Margin="92,303,0,0" TextWrapping="Wrap" Text="Cash" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontFamily="Great Vibes"/>
+            <TextBlock Grid.Column="1" Foreground="Black"  HorizontalAlignment="Left" Margin="188,303,0,0" TextWrapping="Wrap" Text="Credit Card" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontFamily="Great Vibes"/>
+
+        </Grid>
+    </Border>
+</Window>
